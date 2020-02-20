@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick'
 // import { Navbar, Nav } from 'react-bootstrap';
 
-function SliderComponent() {
+function SliderComponent(props) {
 
     var settings = {
         dots: true,
@@ -17,22 +17,19 @@ function SliderComponent() {
       <p> Slider Tab </p>
       <Slider {...settings}>
         <div>
-          <h3>1</h3>
+          <h3>{props.profile.name}</h3>
         </div>
         <div>
-          <h3>2</h3>
+         <img src={props.profile.avatar_url}/>
         </div>
         <div>
-          <h3>3</h3>
+          <h3>{props.profile.bio}</h3>
         </div>
         <div>
-          <h3>4</h3>
+          <h3>{props.profile.location}</h3>
         </div>
         <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
+          <h3>{props.profile.company}</h3>
         </div>
       </Slider>
     </div>

@@ -3,7 +3,7 @@ export const PROFILE_EDITED = 'PROFILE_EDITED';
 
 export function fetchProfile() {
   return (dispatch) => {
-    let header = new Headers({"Content-Type":"application/json", "Authorization":"token 0d4b255aedd171e5fdbfeab9b510772e0a09b75c"});
+    let header = new Headers({"Content-Type":"application/json", "Authorization":"token 7c8ab4a2f2f9a5fce522ed78352ad2cbf313b58a"});
     return fetch('https://api.github.com/users/ajmarquezz', {
       method: 'GET',
       headers: header

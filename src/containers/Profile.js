@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import {fetchProfile} from '../actions/actions_profile';
+import { fetchProfile } from '../actions/actions_profile';
 
 import ProfileComponent from '../components/Profile';
 
